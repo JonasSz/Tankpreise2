@@ -1,0 +1,145 @@
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f0ff 0%, #f7f9fc 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1c1c1e;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #3a4f94;
+  margin-bottom: 2rem;
+}
+
+.input-container {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.input-style {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-style:focus {
+  box-shadow: 0 0 10px 3px rgba(58, 79, 148, 0.7);
+}
+
+.small-text {
+  display: block;
+  margin-top: 6px;
+  color: #555;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.station {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.2s;
+  cursor: default;
+}
+
+.station:hover {
+  transform: scale(1.02);
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 12px 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 20;
+}
+
+.suggestion-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  color: #3a4f94;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles (wie vorher vorgeschlagen) */
+@media (max-width: 480px) {
+  .app-container {
+    max-width: 100%;
+    border-radius: 12px;
+    padding: 1.5rem 1rem 2rem 1rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .input-style {
+    font-size: 0.9rem;
+    padding: 0.65rem 0.9rem;
+  }
+
+  .station {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .station:hover {
+    transform: none;
+  }
+
+  .fav-btn {
+    align-self: flex-end;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .suggestions {
+    max-height: 150px;
+  }
+
+  .suggestion-item {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+}

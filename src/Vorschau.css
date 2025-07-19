@@ -1,0 +1,44 @@
+.vorschau {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.vorschau-details h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1c1c1e;
+  font-weight: 600;
+}
+
+.vorschau-details h2 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #8e8e93;
+}
+
+.vorschau-preise {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.vorschau-preise > div {
+  text-align: center;
+}
+
+.vorschau-preise h2 {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  color: #6e6e73;
+}
+
+.vorschau-preise h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
