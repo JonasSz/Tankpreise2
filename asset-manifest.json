@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Tankpreise2/static/css/main.76ae12a3.css",
+    "main.css": "/Tankpreise2/static/css/main.8aecf016.css",
     "main.js": "/Tankpreise2/static/js/main.ca1d9981.js",
     "index.html": "/Tankpreise2/index.html",
-    "main.76ae12a3.css.map": "/Tankpreise2/static/css/main.76ae12a3.css.map",
+    "main.8aecf016.css.map": "/Tankpreise2/static/css/main.8aecf016.css.map",
     "main.ca1d9981.js.map": "/Tankpreise2/static/js/main.ca1d9981.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ae12a3.css",
+    "static/css/main.8aecf016.css",
     "static/js/main.ca1d9981.js"
   ]
 }
